@@ -9,10 +9,10 @@ namespace Project
     public class ArtGallery
     {
         public string Name { get; set; }
-        public Curator Owner { get; set; }
+        public Curator Curator { get; set; }
         public List<Painting> Paintings { get; set; }
 
-        public ArtGallery(string name, Curator owner, List<Artist> artists)
+        public ArtGallery(string name, Curator curator, List<Artist> artists)
         {
             throw new NotImplementedException();
         }
