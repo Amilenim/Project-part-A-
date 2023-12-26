@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    public class Owner : IPerson
+    public class Curator : IPerson
     {
         public int Income { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
 
-        public Owner(string firstName, string lastName, int age, int income)
+        public Curator(string firstName, string lastName, int age, int income)
         {
             throw new NotImplementedException();
         }
