@@ -1,0 +1,14 @@
+D:\Visual Studio Project\Project (part A)\Project (part A)\bin\Debug\net7.0\Project (part A).exe
+D:\Visual Studio Project\Project (part A)\Project (part A)\bin\Debug\net7.0\Project (part A).deps.json
+D:\Visual Studio Project\Project (part A)\Project (part A)\bin\Debug\net7.0\Project (part A).runtimeconfig.json
+D:\Visual Studio Project\Project (part A)\Project (part A)\bin\Debug\net7.0\Project (part A).dll
+D:\Visual Studio Project\Project (part A)\Project (part A)\bin\Debug\net7.0\Project (part A).pdb
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).AssemblyInfoInputs.cache
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).AssemblyInfo.cs
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).csproj.CoreCompileInputs.cache
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).dll
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\refint\Project (part A).dll
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).pdb
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\Project (part A).genruntimeconfig.cache
+D:\Visual Studio Project\Project (part A)\Project (part A)\obj\Debug\net7.0\ref\Project (part A).dll
