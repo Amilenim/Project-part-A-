@@ -14,4 +14,5 @@
 
 ## Опис методів
 
-- PrintToDisplay - повертає рядок який потім виводиться через Console.WriteLine()
+- PrintToDisplay – повертає рядок який потім виводиться через Console.WriteLine()
+- ToString() – Виводить частину класу
