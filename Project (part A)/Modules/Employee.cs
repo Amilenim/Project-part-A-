@@ -1,23 +1,22 @@
-﻿using Project.Interfaces;
+﻿using Project.Enums;
+using Project.Interfaces;
 
 namespace Project
 {
-    public class Curator : IPerson, ICloneable, ITest
+    public class Employee : IPerson, ITest
     {
-        public int Income { get; set; }
+        public int Id { get; set; }
         public override string FirstName { get; set; }
         public override string LastName { get; set; }
         public override int Age { get; set; }
-        public Curator(string name, string surname, int age, int income)
+        public Work Work { get; set; }
+        public Employee(int id, string name, string surname, int age, Work work)
         {
+            Id = id;
             FirstName = name;
             LastName = surname;
             Age = age;
-            Income = income;
-        }
-        public object Clone()
-        {
-            return new Curator(FirstName, LastName, Age, Income);
+            Work = work;
         }
         public void IsEmpty(string text)
         {
@@ -27,9 +26,9 @@ namespace Project
         {
             if (age < 18 || age > 70) throw new ArgumentException("Невiрний тип");
         }
-        public void Enough(int income) 
+        public void Enough(int id)
         {
-            if (income < 0) throw new ArgumentException("Невiрний тип");
+            if (id < 0) throw new ArgumentException("Невiрний тип");
         }
     }
 }
