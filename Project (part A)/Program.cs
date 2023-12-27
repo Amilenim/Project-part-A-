@@ -11,7 +11,7 @@ namespace Project
             while (true)
             {
                 try { 
-                Console.WriteLine("1 - Оцініть галерею\n2 - Додати галерею в список\n3 - Видалити галерею зi список\n4 - Змінити зберігача\n5 - Контрольний список\n0 - Вихід");
+                Console.WriteLine("1 - Оцiнiть галерею\n2 - Додати галерею в список\n3 - Видалити галерею зi список\n4 - Змiнити зберiгача\n5 - Контрольний список\n0 - Вихiд");
                 int choose = Convert.ToInt32(Console.ReadLine());
                 if (choose == 0) { break; }
                     switch (choose)
@@ -19,16 +19,16 @@ namespace Project
                         case 1:
                             i = 0;
                             if (list.Count == 0)
-                                throw new Exception("Порожній список!");
-                            Console.WriteLine("Виберіть:\n");
+                                throw new Exception("Порожнiй список!");
+                            Console.WriteLine("Виберiть:\n");
                             foreach (ArtInspector rating in list)
                             {
                                 Console.WriteLine(++i + " " + rating.ToString() + "\n");
                             }
                             i = Convert.ToInt32(Console.ReadLine());
                             if (i <= list.Count && list[i - 1].Rating != null)
-                                throw new Exception("Вже оцінений!");
-                            Console.WriteLine("Будь ласка, оцініть галерею:");
+                                throw new Exception("Вже оцiнений!");
+                            Console.WriteLine("Будь ласка, оцiнiть галерею:");
                             choose = Convert.ToInt32(Console.ReadLine());
                             if (choose >= 0 && choose <= 10)
                             {
@@ -37,7 +37,7 @@ namespace Project
                             }
                             break;
                         case 2:
-                            Console.WriteLine("Введіть назву галереї:");
+                            Console.WriteLine("Введiть назву галереї:");
                             string? name = Console.ReadLine();
                             bool enough = false;
                             ArtInspector added;
@@ -50,16 +50,16 @@ namespace Project
                                 string[] strings;
                                 do
                                 {
-                                    Console.WriteLine("Введіть ім'я, прізвище, вік та дохід зберігача галереї:\nПриклад: Девід Рон 34 41241");
+                                    Console.WriteLine("Введiть iм'я, прiзвище, вiк та дохiд зберiгача галереї:\nПриклад: Девiд Рон 34 41241");
                                     name = Console.ReadLine();
                                     strings = name.Split();
                                     if (strings.Length != 4)
-                                        throw new Exception("Невірний тип");
+                                        throw new Exception("Невiрний тип");
                                     enough = true;
                                 } while (!enough);
                                 curator = new Curator(strings[0], strings[1], Convert.ToInt32(strings[2]), Convert.ToInt32(strings[3]));
-                                Console.WriteLine("Зберігач додан!");
-                                Console.WriteLine("Назначте нижче працівників галереї");
+                                Console.WriteLine("Зберiгач додан!");
+                                Console.WriteLine("Виберiть нижче кiлькiсть працiвникiв галереї");
                                 choose = Convert.ToInt32(Console.ReadLine());
                                 for (int k = 0; k < choose; k++)
                                 {
@@ -67,7 +67,7 @@ namespace Project
                                     enough = false;
                                     while (!enough)
                                     {
-                                        Console.WriteLine("Введіть ім'я, прізвище, вік та тип роботи (Екскурсовод, Доглядач, Реставратор) працівника галереї:\nПример: Джон Уик 47 Реставратор");
+                                        Console.WriteLine("Введiть iм'я, прiзвище, вiк та тип роботи (Екскурсовод, Доглядач, Реставратор) працiвника галереї:\nПример: Джон Уик 47 Реставратор");
                                         name = Console.ReadLine();
                                         strings = name.Split();
                                         if (strings.Length < 4 || strings.Length > 4)
